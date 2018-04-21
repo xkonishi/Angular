@@ -1,7 +1,7 @@
-<p-dialog header="Title" [(visible)]="display" [width]="300">
+<p-dialog header="Title" [(visible)]="display" [width]="300" [closable]="false">
   Content
   <p-footer>
     <p-button label="Yes" icon="fa fa-check" (click)="onOK()"></p-button>
-    <p-button label="No" icon="fa fa-close" (click)="display=false"></p-button>
+    <p-button label="No" icon="fa fa-close" (click)="onCancel()"></p-button>
   </p-footer>
 </p-dialog>

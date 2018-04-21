@@ -6,15 +6,14 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
   display = false;
 
   showDialog() {
     this.display = true;
   }
 
-  onComplete(event) {
-    console.log('onComplete');
+  onComplete(event: string) {
+    console.log('onComplete:' + event);
     this.display = false;
   }
 }
