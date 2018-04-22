@@ -12,7 +12,7 @@ export class AppComponent {
     this.display = true;
   }
 
-  onComplete(event: string) {
+  onCloseDialog(event: string) {
     console.log('onComplete:' + event);
     this.display = false;
   }

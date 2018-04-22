@@ -1,2 +1,2 @@
-<app-mydialog [display]=display (completeEvent)="onComplete($event)"></app-mydialog>
+<app-mydialog [display]=display (closeDialogEvent)="onCloseDialog($event)"></app-mydialog>
 <p-button label="Click" icon="fa fa-check" (click)="showDialog()"></p-button>

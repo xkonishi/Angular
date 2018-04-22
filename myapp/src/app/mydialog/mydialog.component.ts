@@ -7,7 +7,7 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 })
 export class MydialogComponent implements OnInit {
   @Input() display = false;
-  @Output() completeEvent = new EventEmitter<string>();
+  @Output() closeDialogEvent = new EventEmitter<string>();
 
   constructor() {}
 
@@ -21,12 +21,12 @@ export class MydialogComponent implements OnInit {
   onOK() {
     console.log('onOK');
     this.display = false;
-    this.completeEvent.emit('USER01');
+    this.closeDialogEvent.emit('USER01');
   }
 
   onCancel() {
     console.log('onCancel');
     this.display = false;
-    this.completeEvent.emit('');
+    this.closeDialogEvent.emit('');
   }
 }
